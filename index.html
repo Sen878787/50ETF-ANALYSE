@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<body>
+			<h1 class="web_h1">50ETF波动率及期权空头数据WEB</h1>
+				
+			<!-- <iframe><frameborder="0" allowTransparency="true" width="292"height="200" scrolling="no"
+		src="https://1.optbbs.com/d/csv/csv2.html"></iframe> -->
+		
+		<ul>
+			<div class="m1">
+				<li>QVIX DATA:</li>
+				<br />
+					<iframe frameborder="0" allowTransparency="true" src="https://1.optbbs.com/d/csv/csv2.html" width="295" height="265" scrolling="no">
+					</iframe>
+			</div>
+			<div class="m2">
+				<li>SZ50 DATA:</li>
+				<br />
+					<script type="text/javascript" src="http://hq.sinajs.cn/list=sh000016" charset="gb2312"></script>
+					<script>
+					var elements=hq_str_sh000016.split(",");
+					document.write("&nbsp&nbsp&nbsp&nbsp"+"今开:"+"&nbsp&nbsp"+elements[1]+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+"昨收:"+"&nbsp&nbsp"+elements[2]);
+					document.write("<br><br>");
+					document.write("&nbsp&nbsp&nbsp&nbsp"+"当前成交量:"+"&nbsp&nbsp"+elements[8]/100+"手"+"&nbsp&nbsp&nbsp"+"当前价格:"+ "&nbsp&nbsp"+elements[3]);
+					document.write("<br><br>");
+					document.write("&nbsp&nbsp&nbsp&nbsp"+"当前最高价:"+"&nbsp&nbsp"+elements[4]+"&nbsp&nbsp&nbsp&nbsp"+"当前最低价:"+"&nbsp&nbsp"+elements[5]);
+					document.write("<br><br>");
+					</script>
+			</div>
+			<div class="m3">
+				<li>SZ50 Chart:</li>
+				<div>
+					<div class="min">
+						<iframe  frameborder="0" allowTransparency="true" src="http://image.sinajs.cn/newchart/min/n/sh000016.gif" width="600" height="340" scrolling="no">
+						</iframe>
+					</div>
+					<div class="daily">
+						<iframe  frameborder="0" allowTransparency="true" src="http://image.sinajs.cn/newchart/daily/n/sh000016.gif" width="600" height="340" scrolling="no">
+						</iframe>
+					</div>
+				</div>
+				<div>
+					<div class="weekly">
+						<iframe  frameborder="0"  allowTransparency="true" src="http://image.sinajs.cn/newchart/weekly/n/sh000016.gif" width="600" height="340" scrolling="no">
+						</iframe>
+					</div>
+					<div class="monthly">
+						<iframe  frameborder="0" allowTransparency="true" src="http://image.sinajs.cn/newchart/monthly/n/sh000016.gif" width="600" height="340" scrolling="no">
+						</iframe>
+					</div>
+				</div>
+			</div>
+				
+			
+		</ul>
+
+	</body>
+</html>
+<style>
+	.web_h1{
+		background-color: antiquewhite;
+	}
+	
+	.min{
+		float: left;
+	}
+	
+	.daily{
+		float: left;
+	}
+	.weekly{
+		float: left;
+	}
+	.monthly{
+		float: left;
+	}
+	.m1{
+		float: left;
+	}
+	.m2{
+		float: left;
+	}
+	.m3{
+		clear: both;
+	}
+	
+</style>
